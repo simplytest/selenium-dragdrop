@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>SeleniumDragDrop</AssemblyName>
+    <RootNamespace>SeleniumDragDrop</RootNamespace>
+    <Authors>SimplyTest</Authors>
+    <Company />
+    <Description>.Net Standard implementation for proper Selenium Drag and Drop functionality.</Description>
+    <Copyright>SimplyTest GmbH</Copyright>
+    <RepositoryUrl>https://github.com/simplytest/selenium-dragdrop</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/simplytest/selenium-dragdrop</PackageProjectUrl>
+    <PackageTags>selenium drag drop test automation</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl />
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="dragAndDrop.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="dragAndDrop.js">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
