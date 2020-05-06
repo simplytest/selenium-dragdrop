@@ -1,3 +1,5 @@
+[![NuGet](https://img.shields.io/badge/SeleniumDragDrop-1.0.1-blue)](https://www.nuget.org/packages/SeleniumDragDrop)
+
 # selenium-dragdrop
 .Net Standard implementation for proper Selenium Drag and Drop Functionality  
 
@@ -7,6 +9,7 @@ This project provides a .NET Standard library for automation of Selenium drag &d
 
 ### Usage example:
 
+``` c# 
     IWebDriver driver = new ChromeDriver(Environment.CurrentDirectory);
     try
     {
@@ -24,6 +27,7 @@ This project provides a .NET Standard library for automation of Selenium drag &d
     {
         driver.Quit();
     }
+```
 
 Try it out and enjoy, your SimplyTest team.
 
